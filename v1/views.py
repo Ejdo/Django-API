@@ -19,8 +19,8 @@ def now(request):
 
     output = {
         "pgsql":{
-            "version": str(version),
-            "dota2_db_size": str(size[0])
+            "version": str(version[0]),
+            "dota2_db_size": size[0]
         }
     }
     output = json.dumps(output)
