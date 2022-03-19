@@ -19,5 +19,9 @@ from v1 import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('v1/health/', views.now,name="now")
+    path('v1/health/', views.health),
+    path('v2/patches/', views.patches),
+    path('v2/players/<player_id>/game_exp/', views.game_exp),
+    path('v2/players/<player_id>/game_objectives/', views.game_objectives),
+    path('v2/players/<player_id>/abilities/', views.abilities)
 ]
